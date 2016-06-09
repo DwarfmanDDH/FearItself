@@ -112,3 +112,11 @@ else{
 cout << "Champion Name: " << champion.name << endl;
 cout << "Champion Weapon: " << champion.weapon << endl;
 cout << "champion's Real Name: " << champion.realname << endl;
+//Rounds loop
+while healthC > 0 or healthF > 0
+{
+	cout << "what attack do you want to use" << endl;
+	cout << attack1S << "		" << attack2S << endl;
+	cout << attack3S << "		" << attack4S << endl;
+	roundchoics = cin >> ">"
+}
