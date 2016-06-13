@@ -24,8 +24,6 @@ class Juggernaut
 	int charenergytypei = 0;
 	string charenergytypes = "Momentum";
 
-
-
 	int strength = 8.5;
 	int durability = 9.5;
 	int speed = 5;
@@ -42,25 +40,28 @@ class Juggernaut
 		// dmg = dmg / 2
 	}
 
-	int attack1(int strength)
+	int attack1(int strength, int charenergytypei)
 	{
 		string attack1s = "Sunday Punch";
 		int attack1 = 10 * strength;
-		return strength;
+		int charenergytypei = charenergytypei + 1
+		return strength, charenergytype;
 	}
 
 	int attack2(int strength) 
 	{
 		string attack2s = "Stone Smash";
 		int attack2 = 10 * strength;
-		return strength;
+		int charenergytypei = charenergytypei + 1
+		return strength, charenergytypei;
 	}
 
 	int attack3(int strength) 
 	{
 		string attack3s = "Unstoppable Charge";
 		int attack3 = 15 * speedvar;
-		return strength;
+		int charenergytypei = charenergytypei + 2
+		return strength, charenergytypei;
 	}
 
 	int attack4(int charenergytypei, int strength, int speedvar)
@@ -83,20 +84,19 @@ class Hulk
 	string weapon = "Hammer of Nul";
 	string realname = "Hulk";
 
-
-	
-
 	int charenergytypei = 0;
 	string charenergytypes = "Rage";
-	// Each point of rage adds 0.5 points of strength, durability, speed, and energy
 	// Rage goes up with attacks being done and when attacked
 
 	int strength = 10;
-	int strengthvar = strength + (0.5 * charenergytypei);
+	float strengthvar = strength + (0.5 * charenergytypei);
 	int durability = 8;
+	float durabilityvar = durability + (0.5 * charenergytypei);
 	int speed = 5.5;
+	float speedvar = speed + (0.5 * charenergytypei);
 	int intelligence = 4;
 	int energy = 4;
+	float energyvar = energy + *(0.5 * charenergytypei);
 	int health = strength * durability * 50;
 	int stamina = durability + energy;
 
@@ -105,24 +105,30 @@ class Hulk
 	 //adds 200 points of health every round
 	}
 
-	int attack1()
+	int attack1(int strengthvar, charenergytypei)
 	{
 		string attack1s = "Gamma Strike";
 		int attack1 = 10 * strengthvar;
+		int charenergytypei = charenergytypei + 1
+		return strengthvar, charenergytypei;
 	}
 
-	int attack2()
+	int attack2(int strengthvar, charenergytypei)
 	{
 		string attack2s = "Hammer Down";
 		int attack2 = 5 * strengthvar;
-		//gives 6 stamina and 1 extra rage point
+		int charenergytypei = charenergytypei + 2
+		//gives 6 stamina 
+		return strengthvar, charenergytypei;
 	}
 
-	int attack3()
+	int attack3(int strengthvar, charenergytypei)
 	{
 		string attack3s = "HULK SMASH!";
 		int attack3 = 15 * strengthvar;
+		int charenergytypei = charenergytypei + 1
 		//uses 4 stamina
+		return strengthvar, charenergytypei;
 	}
 
 	int attack4()
