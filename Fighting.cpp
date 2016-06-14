@@ -2,7 +2,8 @@
 #include <charater>
 #include <iostream>
 #include <cstdlib>
-#include <stdio.h>
+#include <string>
+#include 
 using namespace std;
 
 //Combat Basics
@@ -115,8 +116,44 @@ cout << "champion's Real Name: " << champion.realname << endl;
 //Rounds loop
 while healthC > 0 or healthF > 0
 {
+roundp1:
 	cout << "what attack do you want to use" << endl;
 	cout << attack1S << "		" << attack2S << endl;
 	cout << attack3S << "		" << attack4S << endl;
-	roundchoics = cin >> ">"
+	cout << "Use Numbers to choose attacks";
+	int roundchoicesC = cin >> ">";
+	//Check if the attack can be done 
+	if (roundchoicesC = 1){
+		attack1C
+	}
+	else if (roundchoicesC = 2){
+		attack2C
+	}
+	else if (roundchoicesC = 3){
+		attack3C
+	}
+	else if(roundchoicesC = 4){
+		attack4C
+	}
+	else {
+		cout << "Invaild Choice of Attack";
+		goto roundp1;
+	}
+	
+	int randomattack = rand() % 4 + 1
+	int roundchoicesF = randomattack
+	
+	if (roundchoicesF = 1){
+		attack1F
+	}
+	else if (roundchoicesF = 2){
+		attack2F
+	}
+	else if (roundchoicesF = 3){
+		attack3F
+	}
+	else if(roundchoicesF = 4){
+		attack3F
+	}
+	
 }
