@@ -124,16 +124,16 @@ roundp1:
 	int roundchoicesC = cin >> ">";
 	//Check if the attack can be done 
 	if (roundchoicesC = 1){
-		attack1C
+		attackC = attack1C
 	}
 	else if (roundchoicesC = 2){
-		attack2C
+		attackC = attack2C
 	}
 	else if (roundchoicesC = 3){
-		attack3C
+		attackC = attack3C
 	}
-	else if(roundchoicesC = 4){
-		attack4C
+	else if (roundchoicesC = 4){
+		attackC = attack4C
 	}
 	else {
 		cout << "Invaild Choice of Attack";
@@ -144,16 +144,20 @@ roundp1:
 	int roundchoicesF = randomattack
 	
 	if (roundchoicesF = 1){
-		attack1F
+		attackF = attack1F
 	}
 	else if (roundchoicesF = 2){
-		attack2F
+		attackF = attack2F
 	}
 	else if (roundchoicesF = 3){
-		attack3F
+		attackF = attack3F
 	}
-	else if(roundchoicesF = 4){
-		attack3F
+	else if (roundchoicesF = 4){
+		attackF = attack4F
 	}
+	dmgC = attackF
+	healthF = healthF - dmgC
 	
+	dmgF = attackC
+	healthC = healthC - dmgF
 }
