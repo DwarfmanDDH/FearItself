@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include <charater>
+#include <character>
 #include <iostream>
 #include <cstdlib>
 #include <string>
