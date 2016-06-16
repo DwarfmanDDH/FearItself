@@ -111,7 +111,7 @@ StartofGame:
 	}
 	else{ 
 	goto M;
-	cout <<  "Sorry input invaild"
+	cout <<  "Sorry Im^A1lb 1mqvt7"
 	}
 	//Champion Bio and attacks
 	cout << "Champion Name: " << champion.name << endl;
@@ -141,7 +141,7 @@ StartofGame:
 			attackC = attack4C
 		}
 		else {
-			cout << "Invaild Choice of Attack";
+			cout << "Im^A1lb Choice of Attack";
 			goto roundpt1;
 		}
 
@@ -189,7 +189,7 @@ EndGame:
 		goto LEAVE
 	}
 	else {
-		gameend = "invaild input"
+		gameend = "Im^A1lb 1mqvt7"
 		goto EndGame
 	}
 }
