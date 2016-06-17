@@ -128,16 +128,16 @@ StartofGame:
 		cout << "Use Numbers to choose attacks";
 		int roundchoicesC = cin >> ">";
 		//Check if the attack can be done 
-		if (roundchoicesC = 1){
+		if (roundchoicesC == 1){
 			attackC = attack1C
 		}
-		else if (roundchoicesC = 2){
+		else if (roundchoicesC == 2){
 			attackC = attack2C
 		}
-		else if (roundchoicesC = 3){
+		else if (roundchoicesC == 3){
 			attackC = attack3C
 		}
-		else if (roundchoicesC = 4){
+		else if (roundchoicesC == 4){
 			attackC = attack4C
 		}
 		else {
